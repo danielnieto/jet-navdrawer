@@ -5,3 +5,9 @@
     Description:
         This is where any of your application specific styles should be included
 */
+
+.debug1{ background-color: firebrick; }
+.debug2{ background-color: darkgoldenrod; }
+.debug3{ background-color: yellowgreen; }
+.debug4{ background-color: pink; }
+.debug5{ background-color: lavender; }
