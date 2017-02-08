@@ -20,13 +20,13 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
        // Router setup
        self.router = oj.Router.rootInstance;
        self.router.configure({
-         'responsive': {label: 'Responsive', isDefault: true}
+         'flex': {label: 'Flex', isDefault: true}
        });
       oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
 
       // Navigation setup
       var navData = [
-      {name: 'Responsive', id: 'responsive',
+      {name: 'Flex', id: 'flex',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-catalog-icon-24'}
       ];
       self.navDataSource = new oj.ArrayTableDataSource(navData, {idAttribute: 'id'});
