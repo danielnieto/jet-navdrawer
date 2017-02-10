@@ -3,5 +3,142 @@
  The Universal Permissive License (UPL), Version 1.0
  -->
 <div class="oj-hybrid-padding">
-    
+    <h2>Stacked</h2>
+    <div id="form-container" class="oj-form-layout">
+        <div class="oj-form">
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <label for="input">row 1</label>
+                    <input id="input" data-bind="ojComponent:
+                   {component: 'ojInputText', value:'text', required: true}">
+                </div>
+            </div>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <label id="inputgrouplabel">row 2</label>
+                    <div class="oj-form-control-group" aria-labelledby="inputgrouplabel" role="group">
+                        <input aria-label="this is the input1 label text" data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+                        <input aria-label="this is the input2 label text" data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+                        <input aria-label="this is the input3 label text" data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+                    </div>
+                </div>
+            </div>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <label for="input2">row 3</label>
+                    <input id="input2" data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Inline</h2>
+    <div id="form-container2">
+        <div class="oj-form-layout">
+            <div class="oj-form oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-md-labels-inline">
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="control1">row 1</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="control1" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text', required: true}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="control2">row 2</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <textarea id="control2" rows="6" data-bind="ojComponent: {
+            component: 'ojTextArea', value: 'text'}"></textarea>
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="control3">row 3</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="control3" data-bind="ojComponent: {component: 'ojInputText', value:'text'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h2>Columns</h2>
+    <div id="form-container">
+        <p>Demo width in
+            <span class="demo-screen-range"></span>
+            screen range.</p>
+        <div class="oj-form-layout">
+            <div class="oj-form oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-md-labels-inline
+                oj-form-cols-labels-inline oj-form-cols-max2">
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol">input 1</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text', required: true}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="textareacontrol">textarea</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <textarea id="textareacontrol" rows="6" data-bind="ojComponent: {component: 'ojTextArea',
+                                             value: 'text',}"></textarea>
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol2">input 2</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol2" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text'}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol3">input 3 longer label</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol3" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text'}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol4">input 4</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol4" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text'}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol5">input 5</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol5" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text'}">
+                    </div>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">
+                        <label for="inputcontrol6">input 6</label>
+                    </div>
+                    <div class="oj-flex-item">
+                        <input id="inputcontrol6" data-bind="ojComponent: {component: 'ojInputText',
+                                          value:'text'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="http://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=forms&demo=formvertical">View More</a>
 </div>

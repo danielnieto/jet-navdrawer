@@ -5,7 +5,7 @@
 /*
  * Your form ViewModel code goes here
  */
-define(['ojs/ojcore', 'knockout', 'jquery'],
+define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojinputtext'],
  function(oj, ko, $) {
 
     function formViewModel() {
