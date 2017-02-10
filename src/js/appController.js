@@ -20,13 +20,16 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojrouter', 'ojs/ojknockout', 'ojs/ojarray
        // Router setup
        self.router = oj.Router.rootInstance;
        self.router.configure({
-         'grid': {label: 'Grid', isDefault: true},
+         'form': {label: 'Form', isDefault: true},
+         'grid': {label: 'Grid'},
          'flex': {label: 'Flex'}
        });
       oj.Router.defaults['urlAdapter'] = new oj.Router.urlParamAdapter();
 
       // Navigation setup
       var navData = [
+      {name: 'Form', id: 'form',
+       iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24'},
       {name: 'Flex', id: 'flex',
        iconClass: 'oj-navigationlist-item-icon demo-icon-font-24 demo-catalog-icon-24'},
       {name: 'Grid', id: 'grid',
